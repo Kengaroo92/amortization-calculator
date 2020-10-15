@@ -2,3 +2,5 @@
 amortization-calculator/.vs/amortizationcal-culator/config/applicationhost.config
 amortization-calculator/obj/Debug/amortization-calculator.csprojAssemblyReference.cache
 amortization-calculator/.vs/amortizationcal-culator/v16/.suo
+amortization-calculator/.vs/amortizationcal-culator/v16/.suo
+*.config
