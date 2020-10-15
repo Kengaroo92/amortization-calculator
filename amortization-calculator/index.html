@@ -25,15 +25,58 @@
 <body>
 
     <!-- Preloader (if we decide to make one, ignore if not) -->
-
     <!-- Navigation/Sidebar -->
-
     <!-- Sections -->
 
-    <p>Testing to see if committing a DEV change will affect the main repository.</p>
-
+    <title> JavaScript Loan Calculator </title>
+    <table>
+        <tr>
+            <th>Enter Loan Data:</th>
+            <td></td>
+            <th>Loan Balance, Cumulative Equity, and Interest Payments</th>
+        </tr>
+        <tr>
+            <td>Amount of the loan ($):</td>
+            <td><input id="amount" onchange="calculate();"></td>
+            <td rowspan=8>
+                <canvas id="graph" width="400" height="250"></canvas>
+            </td>
+        </tr>
+        <tr>
+            <td>Annual interest (%):</td>
+            <td><input id="apr" onchange="calculate();"></td>
+        </tr>
+        <tr>
+            <td>Repayment period (years):</td>
+            <td><input id="years" onchange="calculate();"></td>
+        <tr>
+            <td>Zipcode (to find lenders):</td>
+            <td><input id="zipcode" onchange="calculate();"></td>
+        <tr>
+            <th>Approximate Payments:</th>
+            <td><button onclick="calculate();">Calculate</button></td>
+        </tr>
+        <tr>
+            <td>Monthly payment:</td>
+            <td>$<span class="output" id="payment"></span></td>
+        </tr>
+        <tr>
+            <td>Total payment:</td>
+            <td>$<span class="output" id="total"></span></td>
+        </tr>
+        <tr>
+            <td>Total interest:</td>
+            <td>$<span class="output" id="totalinterest"></span></td>
+        </tr>
+        <tr>
+            <th>Sponsors:</th>
+            <td colspan=2>
+                Apply for your loan with one of these fine lenders:
+                <div id="lenders"></div>
+            </td>
+        </tr>
+    </table>
     <!-- Footer -->
-
     <!-- Bootstrap JavaScript Vendor CDN -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
