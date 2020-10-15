@@ -1,1 +1,1 @@
-# mortgagecalculator
+# amortizationcalculator
