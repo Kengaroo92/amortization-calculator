@@ -11,7 +11,7 @@ function calculate() {
 	let rate = parseInt(document.getElementById("intRate").value);
 	// get loan term from DOM in months
 	let term = parseInt(document.getElementById("term").value);
-	
+
 	amount = accounting.toFixed(amount, 2);
 	rate = accounting.toFixed(rate, 2);
 	term = accounting.toFixed(term, 2);
@@ -49,28 +49,28 @@ function calculate() {
 	}
 
 	document.getElementById("mntlyPayment").innerHTML = `\$ ${accounting.toFixed(payment, 2)}`;
-	document.getElementById("ttlPayment").innerHTML = ` \$ ${parseFloat(amount) + parseFloat(totalInterest)}`;
-	document.getElementById("ttlInterest").innerHTML = `\$ ${totalInterest}`;
+	document.getElementById("ttlPayment").innerHTML = `\$ ${accounting.toFixed(parseFloat(amount) + parseFloat(totalInterest), 2)}`;
+	document.getElementById("ttlInterest").innerHTML = `\$ ${accounting.toFixed(totalInterest, 2)}`;
 }
 //verify user input
 //any element that has class .numberOnly will be limited to
 //only numbers being input
-//document.querySelectorAll(".numbersOnly").forEach(a => {
-//	a.addEventListener("keydown", (evt) => {
-//		let keyChar = (evt.which) ? evt.which : evt.keyCode
+document.querySelectorAll(".numbersOnly").forEach(a => {
+	a.addEventListener("keydown", (evt) => {
+		let keyChar = (evt.which) ? evt.which : evt.keyCode
 
-//		if (keyChar >= 48 && keyChar <= 57 ||
-//			keyChar >= 96 && keyChar <= 105 ||
-//			keyChar == 08 ||
-//			keyChar == 37 ||
-//			keyChar == 39) {
-//			return true;
-//		} else {
-//			evt.preventDefault();
-//			return false;
-//		}
-//	})
-//})
+		if (keyChar >= 48 && keyChar <= 57 ||
+			keyChar >= 96 && keyChar <= 105 ||
+			keyChar == 08 ||
+			keyChar == 37 ||
+			keyChar == 39) {
+			return true;
+		} else {
+			evt.preventDefault();
+			return false;
+		}
+	})
+})
 
 
 
