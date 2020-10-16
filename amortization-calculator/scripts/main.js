@@ -9,7 +9,7 @@
 
 
 //verify user input
-//any element that has class #numberOnly will be limited to
+//any element that has class .numberOnly will be limited to
 //only numbers being input
 document.querySelectorAll(".numbersOnly").forEach(a => {
 	a.addEventListener("keydown", (evt) => {
