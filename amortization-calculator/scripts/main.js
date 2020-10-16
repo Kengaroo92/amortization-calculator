@@ -1,19 +1,17 @@
 ﻿
-document.getElementById("calculate").addEventListener("click", () => {
+document.getElementById("btnCalculate").addEventListener("click", () => {
 	calculate();
 })
 
 
 function calculate() {
 	//get amount/total principle from DOM
-	//let amount = parseInt(document.getElementById("amount").value);
+	let amount = parseInt(document.getElementById("loanAmt").value);
 	//get Interest from DOM, change to decimal
-	//let rate = parseInt(document.getElementById("rate").value);
+	let rate = parseInt(document.getElementById("intRate").value);
 	// get loan term from DOM in months
-	//let term = parseInt(document.getElementById("Months").value);
-	let amount = 5000;
-	let rate = 2;
-	let term = 12;
+	let term = parseInt(document.getElementById("term").value);
+	
 	amount = accounting.toFixed(amount, 2);
 	rate = accounting.toFixed(rate, 2);
 	term = accounting.toFixed(term, 2);
@@ -50,7 +48,9 @@ function calculate() {
 		console.log("");
 	}
 
-
+	document.getElementById("mntlyPayment").innerHTML = `\$ ${accounting.toFixed(payment, 2)}`;
+	document.getElementById("ttlPayment").innerHTML = ` \$ ${parseFloat(amount) + parseFloat(totalInterest)}`;
+	document.getElementById("ttlInterest").innerHTML = `\$ ${totalInterest}`;
 }
 //verify user input
 //any element that has class .numberOnly will be limited to
