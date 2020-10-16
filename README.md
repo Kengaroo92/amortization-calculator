@@ -111,5 +111,5 @@ This project has no licensing at this moment. It is Open Source, if you would li
 - [Kenan Bjelosevic](https://www.kenanbjelosevic.com) 
  - [Adrian Edelen](https://adrianedelen.com/) 
  - Fred Smith
-###### This README was written by Kenan Bjelosevic with the assistance of Adrien Edelen and Fred Smith. 
+###### This README was written by Kenan Bjelosevic with the assistance of Adrian Edelen and Fred Smith. 
  
