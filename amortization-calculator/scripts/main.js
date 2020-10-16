@@ -189,3 +189,6 @@ function chart(principal, interest, monthly, payments) {
  }
 } 
   
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip()
+})

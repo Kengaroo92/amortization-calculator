@@ -19,3 +19,9 @@ th, td {
     margin-top: 30px;
     padding: 10px
 }
+
+.card {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+}
