@@ -5,7 +5,7 @@ Loan Rocket is a calculator that will do basic calculations of common loan types
 # Table of Contents
 
  - [Motivation](#motivation)
- - [Technology / Framework Used](#framework)
+ - [Technology Used](#technology)
  - [Features](#features)
  - [Code Example](#code)
  - [APIs Used / Referenced](#apiusage)
@@ -43,8 +43,8 @@ The project was judged on several criteria as outlined below:
 
 The winning team at the end of the week is awarded Coder Foundry Star Coder. Star Coder is a weekly award that showcases the amount of commitment and dedication one has to their work and the amount of knowledge and professionalism that was present during their weekly interview. 
 
-<a name="#framework"></a>
-# Technology / Framework Used
+<a name="#technology"></a>
+# Technology Used
 
  - Logic/Functionality - **JavaScript** and **jQuery**
  - User Interface - **HTML** and **CSS** using the **Bootstrap Framework**
