@@ -52,26 +52,3 @@ function calculate() {
 
 
 }
-//verify user input
-//any element that has class .numberOnly will be limited to
-//only numbers being input
-document.querySelectorAll(".numbersOnly").forEach(a => {
-	a.addEventListener("keydown", (evt) => {
-		let keyChar = (evt.which) ? evt.which : evt.keyCode
-
-		if (keyChar >= 48 && keyChar <= 57 ||
-			keyChar >= 96 && keyChar <= 105 ||
-			keyChar == 08 ||
-			keyChar == 37 ||
-			keyChar == 39) {
-			return true;
-		} else {
-			evt.preventDefault();
-			return false;
-		}
-	})
-})
-
-
-
-
