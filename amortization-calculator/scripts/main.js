@@ -47,10 +47,12 @@ function calculate() {
 		console.log("remaining balance: " + remainingBal);
 		console.log("");
 	}
-
-	document.getElementById("mntlyPayment").innerHTML = `\$ ${accounting.toFixed(payment, 2)}`;
-	document.getElementById("ttlPayment").innerHTML = `\$ ${accounting.toFixed(parseFloat(amount) + parseFloat(totalInterest), 2)}`;
-	document.getElementById("ttlInterest").innerHTML = `\$ ${accounting.toFixed(totalInterest, 2)}`;
+	let mtlyPaymentOutput = accounting.toFixed(payment, 2);
+	let ttlPaymentOutput = accounting.toFixed(parseFloat(amount) + parseFloat(totalInterest), 2);
+	let ttlInterestOutput = accounting.toFixed(totalInterest, 2);
+	document.getElementById("mntlyPayment").innerHTML = accounting.formatMoney(mtlyPaymentOutput);
+	document.getElementById("ttlPayment").innerHTML = accounting.formatMoney(ttlPaymentOutput);
+	document.getElementById("ttlInterest").innerHTML = accounting.formatMoney(ttlInterestOutput);
 }
 //verify user input
 //any element that has class .numberOnly will be limited to
