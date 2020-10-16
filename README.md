@@ -5,11 +5,11 @@ Loan Rocket is a calculator that will do basic calculations of common loan types
 # Table of Contents
 
  - [Motivation](#motivation)
- - [Technology Used](#technology)
+ - [Technology Used](#technology-used)
  - [Features](#features)
- - [Code Example](#code)
- - [APIs Used / Referenced](#apiusage)
- - [How to Use](#howto)
+ - [Code Example](#code-example)
+ - [APIs Referenced](#apis-referenced)
+ - [How to Use](#how-to-use)
  - [Contributors](#contributors)
  - [Credits](#credits)
  - [License](#license)
@@ -43,7 +43,7 @@ The project was judged on several criteria as outlined below:
 
 The winning team at the end of the week is awarded Coder Foundry Star Coder. Star Coder is a weekly award that showcases the amount of commitment and dedication one has to their work and the amount of knowledge and professionalism that was present during their weekly interview. 
 
-<a name="#technology"></a>
+<a name="#technology-used"></a>
 # Technology Used
 
  - Logic/Functionality - **JavaScript** and **jQuery**
@@ -65,7 +65,7 @@ The winning team at the end of the week is awarded Coder Foundry Star Coder. Sta
 **Helps in understanding the product better**: Loan Rocket is easy to use, therefore it helps you have a better understanding of your options instead of having a rich description in a text format.
 
 
-<a name="#code"></a>
+<a name="#code-example"></a>
 # Code Example
 
 The code below converts interest from a percentage to a decimal, annual rate to a monthly rate, and payment period from years to months.
@@ -81,10 +81,10 @@ The code below computes the monthly payments using Math.pow which is a function 
 
 The code above is just two examples of how we have written this application.
 
-<a name="#apiusage"></a>
-# APIs Used / Referenced
+<a name="#apis-referenced"></a>
+# APIs Referenced
 Coming Soon...
-<a name="#howto"></a>
+<a name="#how-to-use"></a>
 # How to Use
 Coming Soon...
 <a name="#contributors"></a>
@@ -111,5 +111,5 @@ This project has no licensing at this moment. It is Open Source, if you would li
 - [Kenan Bjelosevic](https://www.kenanbjelosevic.com) 
  - [Adrian Edelen](https://adrianedelen.com/) 
  - Fred Smith
-###### This README was written by Kenan Bjelosevic with the assistance of Adrian Edelen and Fred Smith. 
+###### This README was written by Kenan Bjelosevic with the assistance of Adrien Edelen and Fred Smith. 
  
