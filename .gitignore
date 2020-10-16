@@ -11,6 +11,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.pdb
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -372,3 +373,4 @@ amortization-calculator/.vs/amortizationcal-culator/v16/.suo
 *.config
 =======
 >>>>>>> main
+amortization-calculator/obj/Debug/amortization-calculator.csproj.FileListAbsolute.txt
