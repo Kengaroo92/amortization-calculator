@@ -215,3 +215,43 @@ E:\Coder Foundry\mortgagecalculator\amortization-calculator\bin\roslyn\System.Bu
 E:\Coder Foundry\mortgagecalculator\amortization-calculator\bin\roslyn\System.Memory.dll
 E:\Coder Foundry\mortgagecalculator\amortization-calculator\bin\roslyn\System.Numerics.Vectors.dll
 E:\Coder Foundry\mortgagecalculator\amortization-calculator\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\amortizationcalculator.dll.config
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\amortizationcalculator.dll
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\amortizationcalculator.pdb
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\csc.exe
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\csc.exe.config
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\csc.rsp
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\csi.exe
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\csi.exe.config
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\csi.rsp
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\System.Buffers.dll
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\System.Memory.dll
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\vbc.exe
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\vbc.exe.config
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\vbc.rsp
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\VBCSCompiler.exe
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\obj\Debug\amortization-calculator.csprojAssemblyReference.cache
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\obj\Debug\amortization-calculator.csproj.CoreCompileInputs.cache
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\obj\Debug\amortization-calculator.csproj.CopyComplete
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\obj\Debug\amortizationcalculator.dll
+C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\obj\Debug\amortizationcalculator.pdb
