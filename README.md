@@ -31,7 +31,7 @@ The challenge had a requirement for what was output:
  5. The total interest paid to date.
  6. The remaining balance of the loan at the end of the current month.
 
-The project was judged on a several criteria as outlined below:
+The project was judged on several criteria as outlined below:
 
  1. Does the project meet the specifications listed above?
  2. Does the app exceed those listed specifications?
