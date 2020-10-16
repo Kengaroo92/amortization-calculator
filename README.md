@@ -1,6 +1,6 @@
 
-# Loan Rocket
-Loan Rocket is a calculator that will do basic calculations of common loan types such as mortgages, auto loans, student loans, or personal loans. 
+# LoanWolf
+LoanWolf is a calculator that will do basic calculations of common loan types such as mortgages, auto loans, student loans, or personal loans. 
 
 # Table of Contents
 
@@ -54,15 +54,15 @@ The winning team at the end of the week is awarded Coder Foundry Star Coder. Sta
 
 <a name="#features"></a>
 # Features
-**Comparative Analysis**: With the help of Loan Rocket, you can compare the loan schemes offered by different banks and calculate how much money can be saved by opting for a particular bank.
+**Comparative Analysis**: With the help of LoanWolf, you can compare the loan schemes offered by different banks and calculate how much money can be saved by opting for a particular bank.
 
 **Look Out for Options**: To find out the total mortgage cost, the loan applicant can enter different loan amounts, tenures and rates of interest in the online calculator to assess various payment options.
 
-**Repayment Scenarios**: Loan Rocket can be used by an applicant to get the result on the basis of their payment schedules by entering the details such as monthly payments, interest rates, and loan tenure.
+**Repayment Scenarios**: LoanWolf can be used by an applicant to get the result on the basis of their payment schedules by entering the details such as monthly payments, interest rates, and loan tenure.
 
-**Customized Calculations**: The applicant can get customized results through Loan Rocket by entering the type of interest rate, amortization period and loan amount.
+**Customized Calculations**: The applicant can get customized results through LoanWolf by entering the type of interest rate, amortization period and loan amount.
 
-**Helps in understanding the product better**: Loan Rocket is easy to use, therefore it helps you have a better understanding of your options instead of having a rich description in a text format.
+**Helps in understanding the product better**: LoanWolf is easy to use, therefore it helps you have a better understanding of your options instead of having a rich description in a text format.
 
 
 <a name="#code-example"></a>
