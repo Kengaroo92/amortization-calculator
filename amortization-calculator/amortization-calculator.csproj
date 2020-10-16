@@ -118,6 +118,7 @@
       <DependentUpon>main.css</DependentUpon>
     </Content>
     <Content Include="index.html" />
+    <Content Include="scripts\accounting.min.js" />
     <Content Include="scripts\bootstrap.bundle.js" />
     <Content Include="scripts\bootstrap.bundle.min.js" />
     <Content Include="scripts\bootstrap.js" />
@@ -215,6 +216,7 @@
     <Content Include="scripts\popper-utils.min.js" />
     <Content Include="scripts\popper.js" />
     <Content Include="scripts\popper.min.js" />
+    <Content Include="scripts\require.js" />
     <Content Include="scripts\src\index.js" />
     <Content Include="scripts\src\methods\defaults.js" />
     <Content Include="scripts\src\methods\destroy.js" />
