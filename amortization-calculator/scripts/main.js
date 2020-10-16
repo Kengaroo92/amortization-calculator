@@ -72,6 +72,5 @@ function calculate() {
 //	})
 //})
 
-//TEST123123
 
 
