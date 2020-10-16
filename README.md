@@ -50,7 +50,7 @@ The winning team at the end of the week is awarded Coder Foundry Star Coder. Sta
  - User Interface - **HTML** and **CSS** using the **Bootstrap Framework**
  - **GitHub** Repository to collaborate code between the team.
  - **Netlify** to publish the application for easy access online.
- - Microsoft Team and Zoom Meetings to communicate effectively.
+ - Microsoft Teams and Zoom Meetings to communicate effectively.
 
 <a name="#features"></a>
 # Features
