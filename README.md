@@ -83,7 +83,11 @@ The code above is just two examples of how we have written this application.
 
 <a name="#apis-referenced"></a>
 # APIs Referenced
-Coming Soon...
+Google Maps and Google Places API
+
+ - [Google Terms of Service](https://policies.google.com/terms?hl=en)
+ - [Google Privacy Policy](https://policies.google.com/privacy)
+
 <a name="#how-to-use"></a>
 # How to Use
 Coming Soon...
@@ -91,9 +95,9 @@ Coming Soon...
 # Contributors
 This project as mentioned in the [Motivation](#motivation) section was a team coding challenge. The teams were selected based on a few criteria that wasn't made public. The teams were created by [Antonio Raynor](https://www.linkedin.com/in/antonio-raynor-b7672746/) and [Bobby Davis, Jr](https://www.linkedin.com/in/bobbydavisjr/). Each team consisted of three students.
 
- - [Kenan Bjelosevic](https://www.kenanbjelosevic.com) 
- - [Adrian Edelen](https://adrianedelen.com/) 
- - Fred Smith
+ - Project Manager - [Kenan Bjelosevic](https://www.kenanbjelosevic.com) 
+ - Head Coder - [Adrian Edelen](https://adrianedelen.com/) 
+ - Designer - [Fred Smith](https://fs3portfolio.netlify.app/)
 
 <a name="#credits"></a>
 # Credits
@@ -106,10 +110,10 @@ If you want to find out more about Coder Foundry, please go to their [YouTube Ch
 <a name="#license"></a>
 # License
 
-This project has no licensing at this moment. It is Open Source, if you would like to contribute and/or collaborate with us, please go to our Developer Profiles by clicking on our names below.
+This project has no licensing at this moment. It is Open Source, if you would like to contribute and/or collaborate with us, please go to our Developer Profiles by clicking on our names below and contact us through there.
 
 - [Kenan Bjelosevic](https://www.kenanbjelosevic.com) 
  - [Adrian Edelen](https://adrianedelen.com/) 
- - Fred Smith
+ - [Fred Smith](https://fs3portfolio.netlify.app/)
 ###### This README was written by Kenan Bjelosevic with the assistance of Adrien Edelen and Fred Smith. 
  
