@@ -1,4 +1,37 @@
-﻿.output {
+﻿body
+{
+	background: #222222;
+	border-style: solid;
+	border-right-color:#45A29E;
+	border-left-color:#45A29E;
+	border-bottom-color:#000000;
+	border-top-color: #000000;
+  	border-width: 20px 30px 20px 30px; /* 25px top, 10px right, 4px bottom and 35px left */
+	border-radius: 0px;
+}
+
+.navbar
+{
+	background-color: #45A29E;
+	color: white;
+	font-weight: bold;
+	border-color: #76FFF9;
+	border-width: medium;
+	opacity: .8;
+}
+
+.navbar-brand, .nav-link
+{
+	padding-top: 4px;
+	padding-bottom: 14px;
+	text-shadow: 3px 3px 6px #000000;
+}
+.navbar-text
+{
+	color: white;
+}
+
+.output {
     font-weight: bold;
         }
 
@@ -14,14 +47,43 @@ th, td {
     vertical-align: top;
        }
 
-#tblCalc
+#tblMain
 {
-    margin-top: 30px;
-    padding: 10px
+    padding:inherit;	
 }
 
 .card {
-    margin: 0 auto;
+	background-color: #45A29E;
+	color: white;
+	font-weight: bold;
+	text-shadow: 3px 3px 6px #000000;
+	border-color: #76FFF9;
+	border-width: medium;
+	border-radius: 10px 80px;
+    margin: 10px auto;
     float: none;
     margin-bottom: 10px;
+	box-shadow: 5px 5px 10px #000000;
+	opacity: .8;
+}
+
+.card-body{
+	margin: inherit;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px #000000;
+	opacity: 1;
+}
+
+.table
+{
+	color: white;
+	text-shadow: 3px 3px 6px #000000;
+	font-weight: bold;
+	background-color: #266360;
+}
+
+#btnCalculate
+{
+	font-weight: bold;
+	box-shadow: 3px 3px 6px #000000;
 }

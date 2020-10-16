@@ -136,33 +136,10 @@ C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn
 C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\Microsoft.Managed.Core.targets
 C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\Microsoft.Win32.Primitives.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.AppContext.dll
 C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Console.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Globalization.Calendars.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.IO.Compression.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.IO.Compression.ZipFile.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Net.Http.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Net.Sockets.dll
 C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
 C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Text.Encoding.CodePages.dll
 C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Threading.Tasks.Extensions.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.ValueTuple.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Xml.XPath.dll
-C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Xml.XPath.XDocument.dll
 C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\vbc.exe
 C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\vbc.exe.config
 C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\vbc.rsp
@@ -234,3 +211,7 @@ E:\Coder Foundry\mortgagecalculator\amortization-calculator\obj\Debug\amortizati
 E:\Coder Foundry\mortgagecalculator\amortization-calculator\obj\Debug\amortization-calculator.csproj.CopyComplete
 E:\Coder Foundry\mortgagecalculator\amortization-calculator\obj\Debug\amortizationcalculator.dll
 E:\Coder Foundry\mortgagecalculator\amortization-calculator\obj\Debug\amortizationcalculator.pdb
+C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Buffers.dll
+C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Memory.dll
+C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
