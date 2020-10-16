@@ -56,7 +56,7 @@ The winning team at the end of the week is awarded Coder Foundry Star Coder. Sta
 # Features
 **Comparative Analysis**: With the help of Loan Rocket, you can compare the loan schemes offered by different banks and calculate how much money can be saved by opting for a particular bank.
 
-**Loot Out for Options**: To find out the total mortgage cost, the loan applicant can enter different loan amounts, tenures and rates of interest in the online calculator to assess various payment options.
+**Look Out for Options**: To find out the total mortgage cost, the loan applicant can enter different loan amounts, tenures and rates of interest in the online calculator to assess various payment options.
 
 **Repayment Scenarios**: Loan Rocket can be used by an applicant to get the result on the basis of their payment schedules by entering the details such as monthly payments, interest rates, and loan tenure.
 
@@ -91,9 +91,10 @@ Coming Soon...
 # Contributors
 This project as mentioned in the [Motivation](#motivation) section was a team coding challenge. The teams were selected based on a few criteria that wasn't made public. The teams were created by [Antonio Raynor](https://www.linkedin.com/in/antonio-raynor-b7672746/) and [Bobby Davis, Jr](https://www.linkedin.com/in/bobbydavisjr/). Each team consisted of three students.
 
-[Kenan Bjelosevic](https://www.kenanbjelosevic.com)
-[Adrian Edelen](https://adrianedelen.com/)
-Fred Smith
+ - [Kenan Bjelosevic](https://www.kenanbjelosevic.com) 
+ - [Adrian Edelen](https://adrianedelen.com/) 
+ - Fred Smith
+
 <a name="#credits"></a>
 # Credits
 Credits for building the application from Front End to Back End go to [Adrian Edelen](https://adrianedelen.com/), Fred Smith and [Kenan Bjelosevic](https://www.kenanbjelosevic.com). It was a team collaboration and each contributor provided some of their knowledge and expertise in all portions of the project. The project was completed in three short days. Assigned on a Thursday night and submitted early Monday morning. 
@@ -105,8 +106,10 @@ If you want to find out more about Coder Foundry, please go to their [YouTube Ch
 <a name="#license"></a>
 # License
 
-This project has no licensing at this moment. It is Open Source, if you would like to contribute and/or collaborate with us, please go to our Developer Profiles. 
+This project has no licensing at this moment. It is Open Source, if you would like to contribute and/or collaborate with us, please go to our Developer Profiles by clicking on our names below.
 
-
+- [Kenan Bjelosevic](https://www.kenanbjelosevic.com) 
+ - [Adrian Edelen](https://adrianedelen.com/) 
+ - Fred Smith
 ###### This README was written by Kenan Bjelosevic with the assistance of Adrien Edelen and Fred Smith. 
  
