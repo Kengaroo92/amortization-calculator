@@ -5,6 +5,8 @@
 	border-color: #3E8885 #45A29E;
 	border-width: 20px 30px 20px 30px; /* 25px top, 10px right, 4px bottom and 35px left */
 	border-radius: 0px;
+	width: auto;
+	height: auto;
 }
 
 .navbar
