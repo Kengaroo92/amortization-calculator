@@ -117,6 +117,7 @@
     <Content Include="content\main.min.css">
       <DependentUpon>main.css</DependentUpon>
     </Content>
+    <Content Include="content\mapscustom.css" />
     <Content Include="index.html" />
     <Content Include="scripts\accounting.min.js" />
     <Content Include="scripts\bootstrap.bundle.js" />
@@ -127,6 +128,7 @@
     <Content Include="scripts\esm\popper-utils.min.js" />
     <Content Include="scripts\esm\popper.js" />
     <Content Include="scripts\esm\popper.min.js" />
+    <Content Include="scripts\googlemaps.js" />
     <Content Include="scripts\index.js.flow" />
     <Content Include="scripts\esm\popper.min.js.map" />
     <Content Include="scripts\esm\popper.js.map" />
