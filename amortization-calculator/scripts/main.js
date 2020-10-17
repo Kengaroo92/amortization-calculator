@@ -24,6 +24,7 @@ function calculate() {
 
 		// calculates monthly payment
 		let payment = (amount) * (rate / 1200) / (1 - (1 + rate / 1200) ** (0 - term));
+		let payOut = payment;
 
 		//setting payment to 2 decimals places
 		payment = accounting.toFixed(payment, 2);
@@ -34,7 +35,7 @@ function calculate() {
 		let principalPayment;
 		let month;
 		let totalInterest = 00;
-
+		document.getElementById("tbody").innerHTML = "";
 		//for loop for amortization
 		for (let i = 0; i < term; i++) {
 			//in the amortization table, the following things should be printed.
@@ -51,41 +52,40 @@ function calculate() {
 			//determine principal paid each month
 			principalPayment = accounting.toFixed(payment - interestPayment, 2);
 
-			//determine remaining bal (the decrements as we go through the loop)
-			//the last payment usually will be lower than the rest of the payments
-			remainingBal = accounting.toFixed(remainingBal - principalPayment, 2);
+			//this checks if you are on the last iteration of the loop and sets the payment equal to remaining balance and remaining balance to 0
+			//else it does the normal calculation
+			if (i == term - 1) {
+				payment = remainingBal;
+				remainingBal = 0;
+			} else {
+				//determine remaining bal (the decrements as we go through the loop)
+				//the last payment usually will be lower than the rest of the payments
+				remainingBal = accounting.toFixed(remainingBal - principalPayment, 2);
+			}
+			
 
+			//print out to table
+			document.getElementById("tbody").innerHTML += 
+							`<tr>
+								<th scope="row">${month}</th>
+								<td>\$ ${accounting.formatMoney(payment)}</td>
+								<td>\$ ${accounting.formatMoney(principalPayment)}</td>
+								<td>\$ ${accounting.formatMoney(interestPayment)}</td>
+								<td>\$ ${accounting.formatMoney(accounting.toFixed(totalInterest, 2))}</td>
+								<td>\$ ${accounting.formatMoney(remainingBal)}</td>
+							</tr>`;
+			
 
-			/*
-			 * ready to be implented into a table
-			 */
-
-			//document.getElementById("MonthTable").innerHTML = month;
-			//document.getElementById("paymentTable").innerHTML = payment;
-			//document.getElementById("principalTable").innerHTML = principalPayment;
-			//document.getElementById("interestTable").innerHTML = interestPayment;
-			//document.getElementById("totalIntTable").innerHTML = totalInterest;
-			//document.getElementById("BalanceTable").innerHTML = remainingBal;
-
-
-			//Printing all the info to console for testing purposes 
-			//remove or comment out when done.
-			console.log("month: " + month);
-			console.log("payment: " + payment);
-			console.log("principal payment: " + principalPayment);
-			console.log("interest payment: " + interestPayment);
-			console.log("total interest: " + totalInterest);
-			console.log("remaining balance: " + remainingBal);
-			console.log("");
+			
 		}
-
 		//output monthly payment, total, and total interest to the upper right portion of the card
-		let mtlyPaymentOutput = accounting.toFixed(payment, 2);
+		let mtlyPaymentOutput = accounting.toFixed(payOut, 2);
 		let ttlPaymentOutput = accounting.toFixed(parseFloat(amount) + parseFloat(totalInterest), 2);
 		let ttlInterestOutput = accounting.toFixed(totalInterest, 2);
 		document.getElementById("mntlyPayment").innerHTML = accounting.formatMoney(mtlyPaymentOutput);
 		document.getElementById("ttlPayment").innerHTML = accounting.formatMoney(ttlPaymentOutput);
 		document.getElementById("ttlInterest").innerHTML = accounting.formatMoney(ttlInterestOutput);
+		
 	}
 
 
@@ -140,6 +140,15 @@ document.getElementById("intRate").addEventListener("keydown", (evt) => {
 })
 
 
+
+//function dynamicTable(month, payment, principalPayment, interestPayment, totalInterest, remainingBal) {
+//	let tableData = {
+//		month: month, payment: payment, principalPayment: principalPayment, interestPayment: interestPayment, totalInterst: totalInterest, remainingBal
+//	};
+
+
+
+//}
 
 
 

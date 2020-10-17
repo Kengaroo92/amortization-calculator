@@ -3,13 +3,13 @@
 <head>
 	<meta charset="utf-8" />
 
-    <!-- Title -->
-    <title> Loan Wolf </title>
+	<!-- Title -->
+	<title> Loan Wolf </title>
 
 	<!-- Description -->
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+
 	<title> Loan Wolf </title>
 
 	<!-- Favicon -->
@@ -21,19 +21,21 @@
 	<!-- Google Maps API CSS -->
 	<link href="content/mapscustom.css" rel="stylesheet" />
 
-    <!-- Custom CSS File Path -->
-    <link href="content/main.css" rel="stylesheet" />
+	<!-- bootstrap table css -->
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.css">
+
+	<!-- Custom CSS File Path -->
+	<link href="content/main.css" rel="stylesheet" />
 
 </head>
 <body>
 
 	<!-- Navigation/Sidebar -->
 	<nav class="navbar navbar-expand-lg">
-        <a
-            class = "navbar-brand text-uppercase"
-            href = "#" >
+		<a class="navbar-brand text-uppercase"
+		   href="#">
 			<img src="Images/WolfLogo.png" alt="" class="img-fluid" id="navbar-logo" />
-        </a>
+		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -100,42 +102,28 @@
 
 				</div>
 				<div class="row overflow-auto">
-					<table class="table table-bordered">
+					<table data-toggle="table" class="table table-bordered" id="table">
 						<thead>
 							<tr>
-								<th scope="col">Month</th>
-								<th scope="col">Payment</th>
-								<th scope="col">Principal</th>
-								<th scope="col">Interest</th>
-								<th scope="col">Total Interest</th>
-								<th scope="col">Balance</th>
+								<th scope="col" data-field="month">Month</th>
+								<th scope="col" data-field="payment">Payment</th>
+								<th scope="col" data-field="principalPayment">Principal</th>
+								<th scope="col" data-field="interestPayment">Interest</th>
+								<th scope="col" data-field="totalInterest">Total Interest</th>
+								<th scope="col" data-field="remainingBal">Balance</th>
 
 							</tr>
 						</thead>
-						<tbody>
+						<tbody id="tbody">
+							<!-- table will be printed here -->
+							<!-- this first one is a placeholder that get overwritten when the calculate() function runs -->
 							<tr>
 								<th scope="row">1</th>
-								<td>PlaceHolder</td>
-								<td>PlaceHolder</td>
-								<td>PlaceHolder</td>
-								<td>PlaceHolder</td>
-								<td>PlaceHolder</td>
-							</tr>
-							<tr>
-								<th scope="row">2</th>
-								<td>PlaceHolder</td>
-								<td>PlaceHolder</td>
-								<td>PlaceHolder</td>
-								<td>PlaceHolder</td>
-								<td>PlaceHolder</td>
-							</tr>
-							<tr>
-								<th scope="row">3</th>
-								<td>PlaceHolder</td>
-								<td>PlaceHolder</td>
-								<td>PlaceHolder</td>
-								<td>PlaceHolder</td>
-								<td>PlaceHolder</td>
+								<td>$</td>
+								<td>$</td>
+								<td>$</td>
+								<td>$</td>
+								<td>$</td>
 							</tr>
 						</tbody>
 					</table>
@@ -173,6 +161,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js" integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA==" crossorigin="anonymous"></script>
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
+	<!-- Canvas JS File Path -->
+	<script src="scripts/canvasjs.min.js"></script>
+
+	<!-- bootstrap table cdn -->
+	<script src="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.js"></script>
+	<!-- bootstrap table locales -->
+	<script src="https://unpkg.com/bootstrap-table@1.18.0/dist/locale/bootstrap-table-zh-CN.min.js"></script>
 
 	<!-- Main JavaScript File Path -->
 	<script src="scripts/main.js"></script>
