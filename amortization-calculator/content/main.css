@@ -1,18 +1,15 @@
 ﻿body
 {
 	background: #222222;
-	border-style: solid;
-	border-right-color:#45A29E;
-	border-left-color:#45A29E;
-	border-bottom-color:#000000;
-	border-top-color: #000000;
-  	border-width: 20px 30px 20px 30px; /* 25px top, 10px right, 4px bottom and 35px left */
+	border-style: outset;
+	border-color: #3E8885 #45A29E;
+	border-width: 20px 30px 20px 30px; /* 25px top, 10px right, 4px bottom and 35px left */
 	border-radius: 0px;
 }
 
 .navbar
 {
-	background-color: #45A29E;
+	background-color: ghostwhite;
 	color: white;
 	font-weight: bold;
 	border-color: #76FFF9;
@@ -26,9 +23,34 @@
 	padding-bottom: 14px;
 	text-shadow: 3px 3px 6px #000000;
 }
+.nav-link 
+{
+	padding: 5px;
+	text-shadow: 3px 3px 6px #000000;
+	width: auto;
+	height: auto;
+	border-radius: 20px;
+	border: medium solid #680610;
+	margin-right: 200px;
+	color: #9FC4F7;
+}
 .navbar-text
 {
-	color: white;
+	color: #67060F;
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: bold;
+	text-shadow: 0px 0px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+
+#navbar-logo
+{
+	align-content: center;
+	height: 100px;
+	width: auto;
+	margin-left: 200px;
+		
 }
 
 .output {
@@ -60,11 +82,15 @@ th, td {
 	border-color: #76FFF9;
 	border-width: medium;
 	border-radius: 10px 80px;
-    margin: 10px auto;
-    float: none;
-    margin-bottom: 10px;
+	margin-top: 60px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+	float: none;
+	margin-bottom: 60px;
 	box-shadow: 5px 5px 10px #000000;
 	opacity: .8;
+	padding-right: 0px;
 }
 
 .card-body{

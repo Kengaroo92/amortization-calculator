@@ -232,4 +232,7 @@ C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\obj\Debug
 C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\obj\Debug\amortization-calculator.csproj.CopyComplete
 C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\obj\Debug\amortizationcalculator.dll
 C:\Users\kenan\Desktop\amortization-calculator\amortization-calculator\obj\Debug\amortizationcalculator.pdb
-
+C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Buffers.dll
+C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Memory.dll
+C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\FRED\source\repos\mortgagecalculator\amortization-calculator\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
