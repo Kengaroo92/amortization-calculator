@@ -1,0 +1,24 @@
+{
+  "name": "loanwolf",
+  "version": "1.0.0",
+  "description": "LoanWolf loan calculator",
+  "main": "main.js",
+  "dependencies": {
+    "eslint": "^7.11.0",
+    "jshint": "^2.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kengaroo92/amortization-calculator.git"
+  },
+  "author": "",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/Kengaroo92/amortization-calculator/issues"
+  },
+  "homepage": "https://github.com/Kengaroo92/amortization-calculator#readme"
+}
