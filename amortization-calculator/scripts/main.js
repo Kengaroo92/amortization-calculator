@@ -123,12 +123,14 @@ function calculate() {
 						type: "line",
 						axisYIndex: 0,
 						legendText: "Principal Payments",
+						showInLegend: true,
 						dataPoints: payChart
 					},
 					{
 						type: "line",
 						axisYIndex: 1,
 						legendText: "Interest Payment",
+						showInLegend: true,
 						dataPoints: intChart
 					}
 				]
@@ -209,19 +211,28 @@ window.onload = function () {
 			axisX: {
 				title: "Months"
 			},
-			axisY: {
-				title: "Dollars"
-			},
+			axisY: [
+				{
+					title: "payment",
+					prefix: "$"
+				},
+				{
+					title: "interest",
+					prefix: "$"
+				}
+			],
 
 			data: [
 				{
-					type: "spline",
+					type: "line",
+					axisYIndex: 0,
 					legendText: "Principal Payments",
 					dataPoints: []
 
 				},
 				{
-					type: "spline",
+					type: "line",
+					axisYIndex: 1,
 					legendText: "Interest Payment",
 					dataPoints: []
 
