@@ -36,7 +36,7 @@ function initMap()
 
             //This portion displays the information window at the center of the map.
             infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.'); //The string is returned if the geolocation services have succeeded. 
+            infoWindow.setContent('Location Found'); //The string is returned if the geolocation services have succeeded. 
             infoWindow.open(map);
             map.setCenter(pos); //Determines the center the map will default too.
 

@@ -1687,7 +1687,7 @@ pre code {
 }
 
 .table-bordered {
-  border: 1px solid #dee2e6;
+    border: 1px solid #67060f;
 }
 
 .table-bordered th,
@@ -4336,7 +4336,6 @@ input[type="button"].btn-block {
 }
 
 .navbar-brand {
-  display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
