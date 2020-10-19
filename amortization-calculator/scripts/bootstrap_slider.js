@@ -1,9 +1,11 @@
+
 //Renders range slider
 "use strict";
 let sldrLoanTerm = new Slider("#sldrLoanTerm", {
-	formatter: function(value) {
-		return "Current value: " + value;
-	}
+    formatter: function (value)
+    {
+        return "Current value: " + value;
+    }
 });
 
 $("btnMnth").click(function ()
@@ -12,7 +14,7 @@ $("btnMnth").click(function ()
     {
         alert("The paragraph is now hidden");
     });
-});$("btnYear").click(function ()
+}); $("btnYear").click(function ()
 {
     $("p").hide("slow", function ()
     {
