@@ -125,6 +125,12 @@ th, td {
     border-color: white;
 }
 
+img, iframe, object, embed, video 
+{
+    width: 100%;
+    max-width: 100%;
+}
+
 /* FOOTER */
 
 
