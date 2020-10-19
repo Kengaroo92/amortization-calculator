@@ -1,14 +1,15 @@
-﻿// this addEventListener listens for the main calculate button to be clicked and executes the calculate function
+﻿
+// this addEventListener listens for the main calculate button to be clicked and executes the calculate function
 document.getElementById("btnCalculate").addEventListener("click", () => {
 	calculate();
 })
 
-//these arrays are used for the chart
-let monthArr = new Array();
-let pay = new Array();
-let int = new Array();
+
 //The main function that is doing all of the math
 function calculate() {
+	// clearing the arrays from last time the button was pressed
+	principalArr = [];
+	interestArr = [];
 	//get amount/total principle from DOM
 	let amount = parseInt(document.getElementById("loanAmt").value);
 	//get Interest from DOM, change to decimal
@@ -32,14 +33,16 @@ function calculate() {
 		//setting payment to 2 decimals places
 		payment = accounting.toFixed(payment, 2);
 
+		//this clears the table when doing a new calculation, preventing the table from perpetually growing.
+		document.getElementById("tbody").innerHTML = "";
 		//declare vars for the loop
 		let remainingBal = amount;
 		let interestPayment;
 		let principalPayment;
 		let month;
 		let totalInterest = 00;
-		document.getElementById("tbody").innerHTML = "";
-
+		let payChart = [];
+		let intChart = [];
 		//for loop for amortization
 		for (let i = 0; i < term; i++) {
 			//in the amortization table, the following things should be printed.
@@ -66,11 +69,11 @@ function calculate() {
 				//the last payment usually will be lower than the rest of the payments
 				remainingBal = accounting.toFixed(remainingBal - principalPayment, 2);
 			}
-			
+
 
 			//print out to table
-			document.getElementById("tbody").innerHTML += 
-							`<tr>
+			document.getElementById("tbody").innerHTML +=
+				`<tr>
 								<th scope="row">${month}</th>
 								<td>\$ ${accounting.formatMoney(payment)}</td>
 								<td>\$ ${accounting.formatMoney(principalPayment)}</td>
@@ -78,11 +81,11 @@ function calculate() {
 								<td>\$ ${accounting.formatMoney(accounting.toFixed(totalInterest, 2))}</td>
 								<td>\$ ${accounting.formatMoney(remainingBal)}</td>
 							</tr>`;
-			
 
-			//monthArr.push(month);
-			//principalArr.push(principalPayment);
-			//interestArr.push(interestPayment);
+
+			// this builds the two arrays for they chart as the loop goes through.
+			payChart.push({ y: parseFloat(principalPayment) });
+			intChart.push({ y: parseFloat(interestPayment) });
 		}
 		//output monthly payment, total, and total interest to the upper right portion of the card
 		let mtlyPaymentOutput = accounting.toFixed(payOut, 2);
@@ -91,11 +94,52 @@ function calculate() {
 		document.getElementById("mntlyPayment").innerHTML = accounting.formatMoney(mtlyPaymentOutput);
 		document.getElementById("ttlPayment").innerHTML = accounting.formatMoney(ttlPaymentOutput);
 		document.getElementById("ttlInterest").innerHTML = accounting.formatMoney(ttlInterestOutput);
-		
+
+
+
+		//canvas js chart
+		//x axis is months
+		//first: principal payment
+		//second: interest payment
+		var chart = new CanvasJS.Chart("chart",
+			{
+				title: {
+					text: "Monthly Amortization"
+				},
+				axisX: {
+					title: "Months"
+				},
+				axisY: [
+					{
+						title: "payment",
+						prefix: "$"
+					},
+					{
+						title: "interest",
+						prefix: "$"
+					}
+				],
+				data: [
+					{
+						type: "line",
+						axisYIndex: 0,
+						legendText: "Principal Payments",
+						dataPoints: payChart
+					},
+					{
+						type: "line",
+						axisYIndex: 1,
+						legendText: "Interest Payment",
+						dataPoints: intChart
+					}
+				]
+			});
+		chart.render();
 	}
-
-
 }
+
+//          end calculate
+//---------------------------------------------
 
 
 /*
@@ -107,24 +151,32 @@ the second grabs the intrate element only,
 this is because the intRate element needs to allow . (period)
 so the if logic is a little different.
 */
+//select the numbersOnly class
 document.querySelectorAll(".numbersOnly").forEach(a => {
+	//look for keydown
 	a.addEventListener("keydown", (evt) => {
+		//set keychar to either evt.which or evt.keycode depending on browser
 		let keyChar = (evt.which) ? evt.which : evt.keyCode
+		//prevent shift key
 		if (evt.shiftKey) {
 			evt.preventDefault();
 		}
+		//allow these characters (numbers, tab, backspace.
 		if (keyChar >= 48 && keyChar <= 57 ||
 			keyChar >= 96 && keyChar <= 105 ||
 			keyChar == 08 ||
 			keyChar == 37 ||
-			keyChar == 39) {
+			keyChar == 39 ||
+			keyChar == 09) {
 			return true;
+		//else prevent the keystroke
 		} else {
 			evt.preventDefault();
 			return false;
 		}
 	})
 })
+//this function works similarly to the other except it allows decimals for the interest rate
 document.getElementById("intRate").addEventListener("keydown", (evt) => {
 	let keyChar = (evt.which) ? evt.which : evt.keyCode
 	if (evt.shiftKey) {
@@ -136,7 +188,8 @@ document.getElementById("intRate").addEventListener("keydown", (evt) => {
 		keyChar == 37 ||
 		keyChar == 39 ||
 		keyChar == 190 ||
-		keyChar == 110) {
+		keyChar == 110 ||
+		keyChar == 09) {
 		return true;
 	} else {
 		evt.preventDefault();
@@ -145,11 +198,9 @@ document.getElementById("intRate").addEventListener("keydown", (evt) => {
 
 })
 
-//canvas js chart
-//x axis is months
-//first: principal payment
-//second: interest payment
 
+//initialize a blank chart
+//the purpose for this is to create a 'default chart that shows on the screen instead of a blank space
 window.onload = function () {
 	var chart = new CanvasJS.Chart("chart",
 		{
@@ -165,41 +216,22 @@ window.onload = function () {
 
 			data: [
 				{
-					type: "line",
+					type: "spline",
 					legendText: "Principal Payments",
-					dataPoints: pay
+					dataPoints: []
 
 				},
 				{
-					type: "line",
+					type: "spline",
 					legendText: "Interest Payment",
-					dataPoints: int
+					dataPoints: []
 
-						
-					
+
+
 				}
 			]
 
-			
+
 		});
-	
-	function updateChart() {
-		let principalArr = [];
-		let interestArr = [];
-
-		for (let i = 0; i < monthArr.length; i++) {
-			pay.push({ y: principalArr[i] });
-			int.push({ x: monthArr[i], y: interestArr[i] });
-		}
-
-	}
-	
 	chart.render();
-	//update the chart on button click
-	document.getElementById("btnCalculate").addEventListener("click", () => {
-		updateChart();
-		chart.options.data[0].datapoints = pay;
-		chart.render();
-	})
 }
-
