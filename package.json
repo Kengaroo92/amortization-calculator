@@ -4,6 +4,7 @@
   "description": "LoanWolf loan calculator",
   "main": "main.js",
   "dependencies": {
+    "bootstrap-slider": "^11.0.2",
     "eslint": "^7.11.0",
     "jshint": "^2.12.0"
   },
