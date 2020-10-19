@@ -3,6 +3,10 @@ document.getElementById("btnCalculate").addEventListener("click", () => {
 	calculate();
 })
 
+//these arrays are used for the chart
+let monthArr = new Array();
+let pay = new Array();
+let int = new Array();
 //The main function that is doing all of the math
 function calculate() {
 	//get amount/total principle from DOM
@@ -11,7 +15,6 @@ function calculate() {
 	let rate = parseFloat(document.getElementById("intRate").value);
 	// get loan term from DOM in months
 	let term = parseInt(document.getElementById("term").value);
-
 	//check for truthy values in the variables before running
 	if (amount && rate && term) {
 
@@ -36,6 +39,7 @@ function calculate() {
 		let month;
 		let totalInterest = 00;
 		document.getElementById("tbody").innerHTML = "";
+
 		//for loop for amortization
 		for (let i = 0; i < term; i++) {
 			//in the amortization table, the following things should be printed.
@@ -76,7 +80,9 @@ function calculate() {
 							</tr>`;
 			
 
-			
+			//monthArr.push(month);
+			//principalArr.push(principalPayment);
+			//interestArr.push(interestPayment);
 		}
 		//output monthly payment, total, and total interest to the upper right portion of the card
 		let mtlyPaymentOutput = accounting.toFixed(payOut, 2);
@@ -139,16 +145,61 @@ document.getElementById("intRate").addEventListener("keydown", (evt) => {
 
 })
 
+//canvas js chart
+//x axis is months
+//first: principal payment
+//second: interest payment
 
+window.onload = function () {
+	var chart = new CanvasJS.Chart("chart",
+		{
+			title: {
+				text: "Monthly Amortization"
+			},
+			axisX: {
+				title: "Months"
+			},
+			axisY: {
+				title: "Dollars"
+			},
 
-//function dynamicTable(month, payment, principalPayment, interestPayment, totalInterest, remainingBal) {
-//	let tableData = {
-//		month: month, payment: payment, principalPayment: principalPayment, interestPayment: interestPayment, totalInterst: totalInterest, remainingBal
-//	};
+			data: [
+				{
+					type: "line",
+					legendText: "Principal Payments",
+					dataPoints: pay
 
+				},
+				{
+					type: "line",
+					legendText: "Interest Payment",
+					dataPoints: int
 
+						
+					
+				}
+			]
 
-//}
+			
+		});
+	
+	function updateChart() {
+		let principalArr = [];
+		let interestArr = [];
 
+		for (let i = 0; i < monthArr.length; i++) {
+			pay.push({ y: principalArr[i] });
+			int.push({ x: monthArr[i], y: interestArr[i] });
+		}
 
+	}
+	
+	chart.render();
+	//update the chart on button click
+	document.getElementById("btnCalculate").addEventListener("click", () => {
+		updateChart();
+		chart.options.data[0].datapoints = pay;
+		chart.render();
+	})
+}
 
