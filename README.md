@@ -1,4 +1,5 @@
 
+
 # Loan Rocket
 Loan Rocket is a calculator that will do basic calculations of common loan types such as mortgages, auto loans, student loans, or personal loans. 
 
@@ -86,14 +87,34 @@ The code above is just two examples of how we have written this application.
 Coming Soon...
 <a name="#howto"></a>
 # How to Use
-Coming Soon...
+LoanWolf was designed to be user friendly. It is quiet simple to use and easy to read.
+
+You start by inputting the information that the calculator is requesting in the three input fields.
+![Loan Wolf - How To Part 1](https://imgur.com/a/t7r0UPW)
+
+You then hit the calculate button.
+![enter image description here](https://imgur.com/PFKt5EX)
+
+This will do output three fields of information.
+
+Your calculated monthly payments, total payments at the end of the loan term and the total interest you will have to pay at the end of the loan term.
+https://imgur.com/rIMoiVe
+
+It will also show this information in a graph.
+https://imgur.com/vrPZ1MX
+
+It will also show this information in a table format.
+https://imgur.com/qka0lC3
+
+The last feature of the calculator is our map that will show you the 20 closest lenders in your area, incase you decide to get the loan you're calculating.
+https://imgur.com/duONMaN
 <a name="#contributors"></a>
 # Contributors
 This project as mentioned in the [Motivation](#motivation) section was a team coding challenge. The teams were selected based on a few criteria that wasn't made public. The teams were created by [Antonio Raynor](https://www.linkedin.com/in/antonio-raynor-b7672746/) and [Bobby Davis, Jr](https://www.linkedin.com/in/bobbydavisjr/). Each team consisted of three students.
 
  - [Kenan Bjelosevic](https://www.kenanbjelosevic.com) 
  - [Adrian Edelen](https://adrianedelen.com/) 
- - Fred Smith
+ - [Fred Smith](https://fs3portfolio.netlify.app/)
 
 <a name="#credits"></a>
 # Credits
@@ -110,6 +131,6 @@ This project has no licensing at this moment. It is Open Source, if you would li
 
 - [Kenan Bjelosevic](https://www.kenanbjelosevic.com) 
  - [Adrian Edelen](https://adrianedelen.com/) 
- - Fred Smith
+ - [Fred Smith](https://fs3portfolio.netlify.app/)
 ###### This README was written by Kenan Bjelosevic with the assistance of Adrian Edelen and Fred Smith. 
  
