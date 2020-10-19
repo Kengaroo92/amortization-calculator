@@ -1,6 +1,11 @@
 
-# Loan Rocket
-Loan Rocket is a calculator that will do basic calculations of common loan types such as mortgages, auto loans, student loans, or personal loans. 
+
+![enter image description here](https://i.ibb.co/yN5FR3B/WolfLogo.png)
+<br>
+
+# LoanWolf
+
+LoanWolf is a calculator that will do basic calculations of common loan types such as mortgages, auto loans, student loans, or personal loans. 
 
 # Table of Contents
 
@@ -67,33 +72,66 @@ The winning team at the end of the week is awarded Coder Foundry Star Coder. Sta
 
 <a name="#code"></a>
 # Code Example
+Here are a few examples of some of the code that we used to create LoanWolf.
+<br>
+The code below sets the input variables to two decimal places.
 
-The code below converts interest from a percentage to a decimal, annual rate to a monthly rate, and payment period from years to months.
-
-    var principal = parseFloat(amount.value);
-    var interest = parseFloat(apr.value) / 100 / 12;
-    var payments = parseFloat(years.value) * 12;
+		amount = accounting.toFixed(amount, 2);
+		rate = accounting.toFixed(rate, 2);
+		term = accounting.toFixed(term, 2);
     
-The code below computes the monthly payments using Math.pow which is a function that returns the base to the exponent power.
+The code below determines the total interest.
 
-    var x = Math.pow(1 + interest, payments);
-    var monthly = (principal*x*interest)/(x-1);
+	 totalInterest = totalInterest + parseFloat(interestPayment);
 
-The code above is just two examples of how we have written this application.
+The code below determines the principal that is paid each month.
+
+    principalPayment = accounting.toFixed(payment - interestPayment, 2);
 
 <a name="#apiusage"></a>
 # APIs Used / Referenced
-Coming Soon...
+We used the Google Maps API to bring a map into our application that showed the users location. With the addition of the Google Places API, we were able to mark up to 20 different lenders within 5 miles of the users location.
+
+[Google Maps and Places API Information](https://developers.google.com/maps/documentation)
 <a name="#howto"></a>
 # How to Use
-Coming Soon...
+
+LoanWolf was designed to be user friendly. It is quite simple to use and easy to read.
+<br>
+You start by inputting the information that the calculator is requesting in the three input fields.
+<br>
+![enter image description here](https://i.ibb.co/LZDHm2K/howto1.png)
+<br>
+You then hit the calculate button.
+<br>
+![enter image description here](https://i.ibb.co/7RV4Z5f/howto2.png)
+
+<br>
+This will do an output of information in three fields.
+<br>
+
+Your calculated monthly payments, total payments at the end of the loan term and the total interest you will have to pay at the end of the loan term.
+<br>
+![enter image description here](https://i.ibb.co/z5n8GY7/howto3.png)
+<br>
+It will also show this information in a graph.
+<br>
+![enter image description here](https://i.ibb.co/GJpm81K/howto4.png)
+<br>
+And it will show this information in a table format.
+<br>
+![enter image description here](https://i.ibb.co/0GL7mPL/howto5.png)
+<br>
+The last feature of the application is our map that will show you up to 20 of the closest lenders in your area, incase you decide to get the loan you're calculating.
+<br>
+![enter image description here](https://i.ibb.co/ck9BRkD/howto6.png)
 <a name="#contributors"></a>
 # Contributors
 This project as mentioned in the [Motivation](#motivation) section was a team coding challenge. The teams were selected based on a few criteria that wasn't made public. The teams were created by [Antonio Raynor](https://www.linkedin.com/in/antonio-raynor-b7672746/) and [Bobby Davis, Jr](https://www.linkedin.com/in/bobbydavisjr/). Each team consisted of three students.
 
  - [Kenan Bjelosevic](https://www.kenanbjelosevic.com) 
  - [Adrian Edelen](https://adrianedelen.com/) 
- - Fred Smith
+ - [Fred Smith](https://fs3portfolio.netlify.app/)
 
 <a name="#credits"></a>
 # Credits
@@ -110,6 +148,6 @@ This project has no licensing at this moment. It is Open Source, if you would li
 
 - [Kenan Bjelosevic](https://www.kenanbjelosevic.com) 
  - [Adrian Edelen](https://adrianedelen.com/) 
- - Fred Smith
+ - [Fred Smith](https://fs3portfolio.netlify.app/)
 ###### This README was written by Kenan Bjelosevic with the assistance of Adrian Edelen and Fred Smith. 
  
