@@ -74,11 +74,11 @@ function calculate() {
 			document.getElementById("tbody").innerHTML +=
 				`<tr>
 								<th scope="row">${month}</th>
-								<td>\$ ${accounting.formatMoney(payment)}</td>
-								<td>\$ ${accounting.formatMoney(principalPayment)}</td>
-								<td>\$ ${accounting.formatMoney(interestPayment)}</td>
-								<td>\$ ${accounting.formatMoney(accounting.toFixed(totalInterest, 2))}</td>
-								<td>\$ ${accounting.formatMoney(remainingBal)}</td>
+								<td>${accounting.formatMoney(payment)}</td>
+								<td>${accounting.formatMoney(principalPayment)}</td>
+								<td>${accounting.formatMoney(interestPayment)}</td>
+								<td>${accounting.formatMoney(accounting.toFixed(totalInterest, 2))}</td>
+								<td>${accounting.formatMoney(remainingBal)}</td>
 							</tr>`;
 
 
